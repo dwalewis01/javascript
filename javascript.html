@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+        
+        <title> Javascript </title>
+    
+    
+    
+    
+    </head>
+    
+    <body>
+        
+        
+        <!-- in line javascript --> 
+        <button id="undo" onclick=" alert ('hi rob!')"> Undo </button>
+        
+        
+        <p id="text"> Hello World</p>
+        
+        <button id="myButton"> Change Text </button>
+        
+        
+        <p id="text2"> i think javascript is ... </p>
+        
+         <button id="myButton1"> append text </button>
+        
+        
+        <p id="emptyP"></p>
+        
+        <button id="createtext"> create text </button>
+        <button id="disappear"> remove text </button>
+    
+        <script type="text/javascript">
+            
+        
+        // change id text from hello world to hello rob
+       // document.getElementById("text").innerHTML= "Hello Rob ";
+            
+            document.getElementById("myButton").onclick = function () {
+                
+                
+               // alert("button click ");
+                
+                document.getElementById("text").innerHTML= "Hello Rob";
+            }
+            
+            
+                   document.getElementById("myButton1").onclick = function () {
+                
+                
+               // alert("button click ");
+                
+                document.getElementById("text2").innerHTML = document.getElementById("text2").innerHTML + " Awesome";
+            }
+            
+            
+                  document.getElementById("createtext").onclick = function () {
+                
+                
+               // alert("button click ");
+                
+                document.getElementById("emptyP").innerHTML= "<h1> HI there </h1>";
+            }
+            
+           document.getElementById("disappear").onclick = function () {
+               
+               document.getElementById("emptyP").style.display ="none";
+                
+           }
+        
+        
+        
+        </script>
+    
+    </body>
+
+
+
+</html>

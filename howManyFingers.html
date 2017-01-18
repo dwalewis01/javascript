@@ -1,0 +1,95 @@
+<html> 
+
+    <head> 
+
+        <title>  Javascript </title>
+    
+    
+    
+    </head>
+    
+    <body> 
+        
+        <p> How many fingers am I holding up</p>
+        
+        
+        <input id ="textBox" type="text"> 
+        
+        <button id="guess"> Guess!</button>
+    
+        
+    
+        <script type="text/javascript">
+            
+            var ranNum =  Math.floor(Math.random() * (5 - 0 + 1)) + 0;
+            
+            var textInput = document.getElementById("textBox").value;
+            
+                
+            document.getElementById("guess").onclick = function () {
+                
+                
+                if (textInput == ranNum ) {
+
+                
+                    alert("that is the correct number");
+                    
+                    
+                
+                
+                } else {
+                    
+                    
+                    alert(" Sorry, this is the correct number " +  ranNum );
+                    
+                    
+                }
+                
+                
+                
+            }
+        
+         
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

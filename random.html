@@ -1,0 +1,67 @@
+<html>
+    
+    <head> 
+        
+        <title> Javscript</title>
+    
+    
+    
+    
+    
+    
+    </head>
+
+
+    <body>
+        
+        <h1> What is the Magic word</h1>
+    
+        <input id="magicWord" type="text">
+        
+        <button id="myButton"> Enter </button>
+        
+        <p id="textDisplay"> </p>
+        
+        
+        
+        <script type="text/javascript">  
+            
+                
+                 
+                
+               // var magicWordEntered = document.getElementById("magicWord").value;
+            
+               //   var magicWord = "please";
+            
+            document.getElementById("myButton").onclick = function() {
+                
+                var magicWordEntered = document.getElementById("magicWord").value;
+                
+              
+                  var magicWord = "please";
+                
+                if (magicWordEntered == magicWord) {
+                    
+                    alert("You got it!");
+                    
+                } else {
+                    
+                    alert("Nope, try again!");
+                    
+                }
+                
+            }
+        
+        
+        
+        </script>
+    
+
+    
+    
+    
+    </body>
+
+
+
+</html>

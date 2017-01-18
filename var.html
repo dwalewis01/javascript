@@ -1,0 +1,55 @@
+<html>
+    <head>
+    
+      
+    </head>
+    
+    <body>
+        
+        
+        <input type="text" id="input">
+        
+        <button id="button"> change the text</button>
+        
+        
+        <p id="changeText"> this is some text </p>
+        
+        
+        <script type="text/javascript">
+        
+        
+            var name="Rob";
+            
+            var myInput = " ";
+            
+            myInput = document.getElementById("input").value;
+            
+        
+            
+        
+            document.getElementById("button").onclick = function () {
+  
+            var myInput = " ";
+            
+            myInput = document.getElementById("input").value;
+            
+                
+            document.getElementById("changeText").
+            innerHTML = myInput;
+        
+            
+            
+            }
+            
+            document.getElementById("changeText").ondblclick = function () {
+                
+                document.getElementById("changeText").style.display = "none";
+            }
+        
+        
+        </script>
+    
+    </body>
+    
+    
+</html>

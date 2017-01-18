@@ -1,0 +1,85 @@
+<IDOCTYPE HTML> 
+    
+    <html>
+    
+    <head>
+            
+        <title> Javascript </title>
+        
+        
+        
+    
+    </head>
+    
+        
+        <body> 
+            
+            <p id="text"> Hello World!</p>
+            
+            
+            <button id="myButton"> Change text</button>
+            
+            <!-- Creating empty paragraph -->
+            <p id="emptyParagraph"></p>
+            
+            
+            <button id="createParagraph" > create paragraph</button>
+            
+            <p id="secondParagraph"> Javascript is  ....</p>
+            
+              <button id="myButton1"> update paragraph</button>
+            
+            
+            <br>
+            
+            <p id="moreText"> this is some more text</p>
+            
+            <button id="styleText"> style text</button>
+            
+            <!-- javascript information -->
+            
+            
+            <script type="text/javascript">
+                
+                document.getElementById("myButton").onclick = function() {
+                    
+                    
+                    document.getElementById("text").innerHTML = " Hello Rob";
+                    
+                    
+                }
+            
+                
+                document.getElementById("myButton1").onclick = function (){
+                    
+                    
+                    
+                    document.getElementById("secondParagraph").innerHTML =  " I think " + document.getElementById("secondParagraph").innerHTML + " Awesome";
+                }
+            
+                     // entering information into to emptyparagraph    
+                document.getElementById("createParagraph").onclick = function () {
+                    
+                    
+                    document.getElementById("emptyParagraph").innerHTML = " new information congrats !!";
+                }
+            
+            
+                document.getElementById("styleText").onclick = function () {
+                    
+                    document.getElementById ("moreText").style.fontSize = "50";
+                    
+                    //document.getElementById("moreText").style.display = "none"; to make element disappear
+                }
+            
+            
+            </script>
+        
+        
+        
+        
+        
+        
+        </body>
+    
+    </html>
